@@ -1,0 +1,23 @@
+From: Antonio Terceiro <terceiro@debian.org>
+Date: Thu, 14 Jul 2016 22:09:09 -0300
+Subject: spec/spec_helper.rb: explicitly enable should syntax
+
+---
+ spec/spec_helper.rb | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+
+diff --git a/spec/spec_helper.rb b/spec/spec_helper.rb
+index 1f0e3ed..05806f9 100644
+--- a/spec/spec_helper.rb
++++ b/spec/spec_helper.rb
+@@ -54,4 +54,8 @@ def time
+   t = Time.now
+   yield
+   Time.now - t
+-end
+\ No newline at end of file
++end
++
++RSpec.configure do |config|
++  config.expect_with(:rspec) { |c| c.syntax = :should }
++end

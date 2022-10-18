@@ -1,0 +1,54 @@
+ruby-indentation (0.1.1-2) unstable; urgency=medium
+
+  * Team upload.
+  * Update packaging with a new `dh-make-ruby -w` run. Run tests during build.
+    - remove debian/ruby-test-files.yaml
+  * New build makes binary package provide the necessary Rubygems metadata
+    (Closes: #830094).
+  * 0001-spec-spec_helper.rb-explicitly-enable-should-syntax.patch: avoid
+    deprecation warnings when running tests.
+
+  [ Cédric Boutillier ]
+  * Bump Standards-Version to 3.9.7 (no changes needed)
+  * Run wrap-and-sort on packaging files
+  * Use https:// in Vcs-* fields (4 months ago) <Cédric Boutillier>
+  * Remove version in the gem2deb build-dependency
+
+  [ Christian Hofstaedtler ]
+  * Fix typos in package description (Closes: #739218)
+    - Thanks to Pascal De Vuyst
+
+ -- Antonio Terceiro <terceiro@debian.org>  Thu, 14 Jul 2016 22:12:01 -0300
+
+ruby-indentation (0.1.1-1) unstable; urgency=medium
+
+  * Imported Upstream version 0.1.1
+  * debian/control: Drop DM-Upload-Allowed
+  * Bump Standards-Version to 3.9.5 (with no changes).
+
+ -- TANIGUCHI Takaki <takaki@debian.org>  Tue, 24 Dec 2013 10:06:05 +0900
+
+ruby-indentation (0.0.7-2) unstable; urgency=low
+
+  * Team upload
+  * debian/control: 
+    + remove obsolete DM-Upload-Allowed flag
+    + use canonical URI in Vcs-* fields
+  * debian/ruby-test-files.yaml: add rspec/autorun to the list
+    so that specs are run (Closes: #715013)
+
+ -- Cédric Boutillier <boutil@debian.org>  Sat, 13 Jul 2013 01:31:39 +0200
+
+ruby-indentation (0.0.7-1) unstable; urgency=low
+
+  * update Format URL
+  * Imported Upstream version 0.0.7
+  * Bump Standards-Version to 3.9.4 (with no changes).
+
+ -- TANIGUCHI Takaki <takaki@debian.org>  Mon, 06 May 2013 11:34:53 +0900
+
+ruby-indentation (0.0.6-1) unstable; urgency=low
+
+  * Initial release (Closes: #652318)
+
+ -- TANIGUCHI Takaki <takaki@debian.org>  Fri, 16 Dec 2011 12:09:56 +0900

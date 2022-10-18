@@ -1,0 +1,28 @@
+Source: ruby-indentation
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: TANIGUCHI Takaki <takaki@debian.org>
+Build-Depends: debhelper (>= 9~),
+               gem2deb,
+               rake,
+               ruby-rspec
+Standards-Version: 3.9.8
+Vcs-Git: https://anonscm.debian.org/git/pkg-ruby-extras/ruby-indentation.git
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-ruby-extras/ruby-indentation.git
+Homepage: http://samueldana.github.com/indentation/
+Testsuite: autopkgtest-pkg-ruby
+XS-Ruby-Versions: all
+
+Package: ruby-indentation
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ruby | ruby-interpreter,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: Ruby extensions for Array and String classes
+ A small library of extensions to Ruby's Array and String classes that
+ allow indentation manipulation of Strings and Arrays of Strings. Has
+ the capability of working with multi-line strings. If you frequently
+ use String arrays to manipulate text, see synopsis (In README.rdoc)
+ for examples of how indentation can make your life easier.
